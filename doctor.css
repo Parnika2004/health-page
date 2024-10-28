@@ -1,0 +1,156 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('doctor-icon.jpg'); /* Set the path to your background image */
+    background-size: cover; /* Ensures the background covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    z-index: -1;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+}
+
+.head1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.inner a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+.headline {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 500px;
+    color: #666;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.b1, .b2 {
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.b1 {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+}
+
+.b2 {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+}
+
+/* Adjusting Cards Placement */
+.card1, .card2 {
+    position: absolute; /* Absolute positioning for better control */
+    width: 200px;
+    height: 300px;
+    background-color: rgba(79, 194, 251, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid rgba(79, 194, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Adjust the positioning of each card individually */
+.card1 {
+    top: 230px; /* Adjust from the top to align with "Your Headline" */
+    left: 1000px; /* Adjust the horizontal position */
+}
+
+.card2 {
+    top: 230px; /* Align the second card with the first one */
+    left: 1240px; /* Position the second card a little further right */
+}
+
+.card1 img, .card2 img {
+    width: 100px;
+    height: 100px;
+}
+.more-info-text {
+    position: absolute;
+    top: 550px; /* Adjust this value to move text below the cards */
+    left: 1000px; /* Start the text from where the cards start */
+    width: 500px; /* Adjust width as needed */
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+.more-info-text p:first-child {
+    font-weight: bold; /* Makes only the first paragraph bold */
+}
+
+.price, .price1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
